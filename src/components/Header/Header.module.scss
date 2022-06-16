@@ -1,0 +1,20 @@
+.header {
+  margin-bottom: 24px;
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    .headerInner {
+      margin-top: 36px;
+      .headerTitle {
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 250;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0px 1px 1px #000000;
+      }
+    }
+  }
+}
