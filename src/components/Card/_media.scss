@@ -118,6 +118,15 @@
   }
 }
 
+@media (max-width: 690px) {
+  .cardItem {
+    margin-bottom: 14.1% !important;
+  }
+  .cardItemActive {
+    margin-bottom: 14.1% !important;
+  }
+}
+
 @media (max-width: 414px) {
   .cardsItems {
     padding: 0 11.1%;
@@ -139,5 +148,14 @@
 @media (max-width: 375px) {
   .cardsItems {
     padding: 0 7.1%;
+  }
+}
+
+@media (max-width: 320px) {
+  .cardItem {
+    margin-bottom: 16.1% !important;
+  }
+  .cardItemActive {
+    margin-bottom: 16.1% !important;
   }
 }
