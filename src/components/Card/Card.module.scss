@@ -10,96 +10,13 @@
       display: flex;
       flex-wrap: wrap;
       gap: 7.1%;
-      .cardItem {
+      .cardWrapper {
         width: 320px;
-        height: 480px;
-        background: #f2f2f2;
-        background-image: url(../../img/card/cat.png);
-        background-repeat: no-repeat;
-        background-position: 50% 182%;
-        border: 4px solid #1698d9;
+        height: 509px;
         border-radius: 12px;
         position: relative;
         margin-bottom: 7.1%;
         transition: 0.3s ease;
-        cursor: pointer;
-        .cardItemTextContent {
-          display: flex;
-          flex-direction: column;
-          .cardItemTextFirst {
-            font-family: 'Trebuchet MS';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: #666666;
-            margin-top: 17px;
-            margin-left: 47px;
-            margin-bottom: 4px;
-          }
-          .cardItemTextSecond {
-            font-family: 'Trebuchet MS';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 56px;
-            color: #000000;
-            margin-left: 44px;
-          }
-          .cardItemTextThird {
-            font-family: 'Trebuchet MS';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 28px;
-            color: #000000;
-            margin-left: 47px;
-            margin-bottom: 15px;
-          }
-          .cardItemTextFourth {
-            font-family: 'Trebuchet MS';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            color: #666666;
-            margin-left: 47px;
-          }
-        }
-        .weightRound {
-          position: absolute;
-          border-radius: 50%;
-          width: 80px;
-          height: 80px;
-          background: #1698d9;
-          right: 12px;
-          bottom: 12px;
-          transition: 0.3s ease;
-          .weightRoundNumbers {
-            font-family: 'Trebuchet MS';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 42px;
-            line-height: 22px;
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
-            margin-bottom: 6px;
-            text-align: center;
-            color: #ffffff;
-          }
-          .weightRoundText {
-            font-family: 'Trebuchet MS';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 22px;
-            text-align: center;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-          }
-        }
         .cardBottom {
           position: absolute;
           font-family: 'Trebuchet MS';
@@ -109,8 +26,11 @@
           line-height: 15px;
           text-align: center;
           color: #ffffff;
-          bottom: -33px;
-          right: 53px;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          width: 100%;
 
           span {
             border-bottom: 1px dashed #1698d9;
@@ -118,12 +38,103 @@
             cursor: pointer;
           }
         }
-
-        &:hover {
-          border: 4px solid #2ea8e6;
-
+        .cardItem {
+          width: 320px;
+          height: 480px;
+          background: #f2f2f2;
+          background-image: url(../../img/card/cat.png);
+          background-repeat: no-repeat;
+          background-position: 50% 182%;
+          border: 4px solid #1698d9;
+          border-radius: 12px;
+          position: relative;
+          margin-bottom: 7.1%;
+          transition: 0.3s ease;
+          cursor: pointer;
+          .cardItemTextContent {
+            display: flex;
+            flex-direction: column;
+            .cardItemTextFirst {
+              font-family: 'Trebuchet MS';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              color: #666666;
+              margin-top: 17px;
+              margin-left: 47px;
+              margin-bottom: 4px;
+            }
+            .cardItemTextSecond {
+              font-family: 'Trebuchet MS';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 48px;
+              line-height: 56px;
+              color: #000000;
+              margin-left: 44px;
+            }
+            .cardItemTextThird {
+              font-family: 'Trebuchet MS';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 28px;
+              color: #000000;
+              margin-left: 47px;
+              margin-bottom: 15px;
+            }
+            .cardItemTextFourth {
+              font-family: 'Trebuchet MS';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 16px;
+              color: #666666;
+              margin-left: 47px;
+            }
+          }
           .weightRound {
-            background: #2ea8e6;
+            position: absolute;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            background: #1698d9;
+            right: 12px;
+            bottom: 12px;
+            transition: 0.3s ease;
+            .weightRoundNumbers {
+              font-family: 'Trebuchet MS';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 42px;
+              line-height: 22px;
+              display: flex;
+              flex-direction: column;
+              margin-top: 20px;
+              margin-bottom: 6px;
+              text-align: center;
+              color: #ffffff;
+            }
+            .weightRoundText {
+              font-family: 'Trebuchet MS';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 22px;
+              text-align: center;
+              color: #ffffff;
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
+          &:hover {
+            border: 4px solid #2ea8e6;
+
+            .weightRound {
+              background: #2ea8e6;
+            }
           }
         }
       }
